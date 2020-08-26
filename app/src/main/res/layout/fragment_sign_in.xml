@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AuthenticationActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_logo"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="-130px"
+        android:background="@drawable/linearlayout_container_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+
+        <EditText
+            android:drawableEnd="@drawable/ic_email"
+            android:layout_marginTop="100dp"
+            android:lines="1"
+            android:id="@+id/emailInputField"
+            android:layout_gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:drawableEnd="@drawable/ic_password"
+            android:lines="1"
+            android:id="@+id/passwordInputField"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_btn_background"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/sign_in"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:alpha="0.7"
+        android:layout_gravity="center"
+        android:background="@drawable/register_btn_background"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="@string/sign_up"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
